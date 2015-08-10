@@ -13,6 +13,13 @@ Generic boilerplate used for building SASS and compiling sprites. This is intend
 	* Same as "build" above but also waits for more changes and regenerates all dynamic files when changes occur.
 
 
+## Features
+
+* Boilerplate for compiling SASS/SCSS files to CSS.
+* Automatically generates and minifies PNG sprites, including easy to use accompanying SASS `%sprite-imagename` placeholders.
+* Includes [autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) for better backward compatibility.
+
+
 ## System Requirements
 
 * [ruby](https://www.ruby-lang.org/) v1.9+
@@ -54,4 +61,5 @@ You can configure file paths at the top of the provided `Gruntfile.js`. The foll
 
 ## To Do
 
+* Migrate to [PostCSS](https://github.com/nDmitry/grunt-postcss).
 * Setup a demo.html file.

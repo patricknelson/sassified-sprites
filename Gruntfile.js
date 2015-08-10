@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// adds vendor prefixes to compiled CSS
+		// Adds vendor prefixes to compiled CSS for better backward compatibility.
 		autoprefixer: {
 			options: {
 				browsers: ['last 2 versions', 'ie 8', 'ie 9'],
@@ -102,15 +102,14 @@ module.exports = function(grunt) {
 		},
 
 
-		// watches for file changes, runs tasks, and triggers livereload
-		// TODO: Possibly remove live reload since that's not used on this site (due to remote dev).
+		// Watches for file changes, runs tasks, and triggers livereload.
 		watch: {
 			options: {
 				livereload: true
 			},
 			sass: {
 				files: ['<%= config.path.scss %>/**/*.scss'],
-				tasks: ['sass'] // IMPORTANT: This is modified to be 'compileSassMain'
+				tasks: ['sass']
 			},
 			sprites: {
 				files: [
