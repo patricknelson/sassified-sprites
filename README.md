@@ -50,3 +50,8 @@ You can configure file paths at the top of the provided `Gruntfile.js`. The foll
 	*  Store any small image files which should be combined into a single sprite in this directory.
 *  `images/sprites/build`
 	*  Where the final generated sprite image file (`sprites.png`) will be placed.  
+
+
+## To Do
+
+* Setup a demo.html file.

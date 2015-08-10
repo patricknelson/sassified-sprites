@@ -1,0 +1,21 @@
+/**
+ * Example common/main styles.
+ *
+ * @site	YOUR_SITE_NAME
+ * @author	Patrick Nelson, patnelson@ebay.com
+ * @since	2015-08-10
+ */
+
+body, html {
+	color: $font-color;
+}
+
+.example1 {
+	@extend %image-replacement;
+	@extend %sprite-example1;
+}
+
+.example2:before {
+	@extend %pseudo-icon;
+	@extend %sprite-example2;
+}

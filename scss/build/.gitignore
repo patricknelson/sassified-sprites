@@ -1,0 +1,4 @@
+# Used for storing dynamically built SASS/SCSS files (e.g. sprite imports)
+# So, ignore everything but this file.
+*
+!.gitignore

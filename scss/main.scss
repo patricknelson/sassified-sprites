@@ -1,0 +1,18 @@
+/**
+ * Main entry point for all shared site styles compiled from SASS/SCSS.
+ *
+ * @site	YOUR_SITE_NAME
+ * @author	Patrick Nelson, patnelson@ebay.com
+ * @since	2015-08-10
+ */
+
+// Variables and placeholders (must be imported first).
+@import 'variables';
+@import 'placeholders';
+
+// Dynamically built SCSS files.
+@import 'build/sprites';
+
+// Common styles.
+@import 'normalize';
+@import 'common';

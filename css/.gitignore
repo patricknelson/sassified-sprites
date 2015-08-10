@@ -1,0 +1,6 @@
+# This file is now automatically generated via grunt/SASS.
+# Add more entries here as you add more compiled SASS/SCSS files.
+main.css
+
+# Don't include any CSS map files because these are also dynamic.
+*.css.map

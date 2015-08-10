@@ -1,0 +1,8 @@
+# IDE files.
+.idea
+
+# Managed by npm.
+node_modules/
+
+# SASS related.
+.sass-cache/

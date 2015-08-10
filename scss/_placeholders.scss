@@ -1,0 +1,23 @@
+/**
+ * Commonly used placeholders.
+ *
+ * @site	YOUR_SITE_NAME
+ * @author	Patrick Nelson, patnelson@ebay.com
+ * @since	2015-08-10
+ */
+
+// Convert a block level element into an icon.
+%image-replacement {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	display: inline-block;
+}
+
+// Allows pseudo-elements (e.g. :before, :after) to be converted into an icon.
+%pseudo-icon {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+}
