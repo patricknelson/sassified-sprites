@@ -16,12 +16,12 @@ Generic boilerplate used for building SASS and compiling sprites. This is intend
 ## System Requirements
 
 * [ruby](https://www.ruby-lang.org/) v1.9+
-    * [bundler](http://bundler.io/) *manages ruby packages (gems)* `gem install bundler`
+    * [bundler](http://bundler.io/): Manages ruby packages (gems) `gem install bundler`
     * Make sure RubyGems is up-to-date: `gem update --system`
 * [node.js](http://nodejs.org/)
-    * [npm](https://npmjs.org/) *manages node.js packages* `npm update -g npm`
-    * [grunt cli](http://gruntjs.com/) *task runner* `npm install -g grunt-cli`
-    * [bower](http://bower.io/) *manages css and javascript packages* `npm install -g bower`
+    * [npm](https://npmjs.org/): Manages node.js packages `npm update -g npm`
+    * [grunt cli](http://gruntjs.com/): Task runner `npm install -g grunt-cli`
+    * [bower](http://bower.io/): Manages css and javascript packages `npm install -g bower`
 
 ## Installation
 
