@@ -33,4 +33,20 @@ bundle install
 
 # Install node.js packages (grunt tasks like watch and imagine for sprites/minification)
 npm install
+
+# Get started with development!
+grunt dev
 ```
+
+## Configuration
+
+You can configure file paths at the top of the provided `Gruntfile.js`. The following paths are available by default:
+
+* `css`
+	* Where generated CSS is stored. By default, only `main.css` will end up here.
+* `scss`
+	*  Source directory where your SASS/SCSS will live. Any *.scss files (not starting with an underscore) will be converted to CSS files living in the above `css` directory, if placed here.
+*  `images/sprites/src`
+	*  Store any small image files which should be combined into a single sprite in this directory.
+*  `images/sprites/build`
+	*  Where the final generated sprite image file (`sprites.png`) will be placed.  
