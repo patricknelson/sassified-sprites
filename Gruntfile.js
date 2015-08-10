@@ -4,7 +4,8 @@
  * For usage, please see README.md.
  *
  * @site	YOUR_SITE_NAME
- * @author	Patrick Nelson, patnelson@ebay.com
+ * @author	Patrick Nelson, pat@catchyour.com
+ * @link	https://github.com/patricknelson/sassified-sprites
  * @since	2015-08-10
  */
 
