@@ -2,7 +2,6 @@
 Generic boilerplate used for building SASS and compiling sprites. This is intended to stay pretty simple, so feel free to copy, modify and change this to suit your needs.
 
 
-
 ## Usage:
 
 * `grunt build-sprites`
@@ -17,7 +16,7 @@ Generic boilerplate used for building SASS and compiling sprites. This is intend
 
 * Boilerplate for compiling SASS/SCSS files to CSS.
 * Automatically generates and minifies PNG sprites, including easy to use accompanying SASS `%sprite-imagename` placeholders.
-* Includes [autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) for better backward compatibility.
+* Includes a the grunt [PostCSS](https://github.com/nDmitry/grunt-postcss) task with the [autoprefixer-core](https://github.com/postcss/autoprefixer-core) plugin for better browser backward compatibility.
 
 
 ## System Requirements
@@ -29,6 +28,7 @@ Generic boilerplate used for building SASS and compiling sprites. This is intend
     * [npm](https://npmjs.org/): Manages node.js packages `npm update -g npm`
     * [grunt cli](http://gruntjs.com/): Task runner `npm install -g grunt-cli`
     * [bower](http://bower.io/): Manages css and javascript packages `npm install -g bower`
+
 
 ## Installation
 
@@ -44,6 +44,7 @@ npm install
 # Get started with development!
 grunt dev
 ```
+
 
 ## Configuration
 
@@ -61,5 +62,4 @@ You can configure file paths at the top of the provided `Gruntfile.js`. The foll
 
 ## To Do
 
-* Migrate to [PostCSS](https://github.com/nDmitry/grunt-postcss).
 * Setup a demo.html file.

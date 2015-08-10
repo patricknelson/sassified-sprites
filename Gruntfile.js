@@ -44,10 +44,14 @@ module.exports = function(grunt) {
 		},
 
 		// Adds vendor prefixes to compiled CSS for better backward compatibility.
-		autoprefixer: {
+		postcss: {
 			options: {
-				browsers: ['last 2 versions', 'ie 8', 'ie 9'],
-				map: true
+				map: true,
+				processors: [
+					require('autoprefixer-core')({
+						browsers: ['last 2 versions', 'ie 8', 'ie 9']
+					})
+				]
 			},
 
 			// Auto-prefix ALL CSS files.
@@ -56,16 +60,6 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: '<%= config.path.css %>',
 					src: '**/*.css',
-					dest: '<%= config.path.css %>'
-				}]
-			},
-
-			// Auto-prefix ONLY the main CSS files.
-			main: {
-				files: [{
-					expand: true,
-					cwd: '<%= config.path.css %>',
-					src: 'main.css',
 					dest: '<%= config.path.css %>'
 				}]
 			}
@@ -131,7 +125,8 @@ module.exports = function(grunt) {
 	// Build everything.
 	grunt.registerTask('build', [
 		'build-sprites',
-		'sass'
+		'sass',
+		'postcss'
 	]);
 
 	// Build everything, but wait for changes and re-build.
